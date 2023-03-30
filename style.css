@@ -12,15 +12,80 @@ body{
     overflow-x: hidden;
 }
 
+/*        Navigation Section          */
 header {
     top:0;
     left: 0;
     padding: 30px 100px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     position: absolute;
     z-index:100;
 }
 
+.logo {
+    font-size: 2em;
+    color: #359381;
+    pointer-events: none;
+    margin-right: 270px ;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #359381;
+    padding: 6px 15px;
+    margin: 0 10px;
+    border-radius: 20px;
+}
+
+.navigation a:hover, .navigation a.active {
+    background-color: #359381;
+    color: #f9f9f9;
+
+}
+
+/*      Home Page      */
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+}
+
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.parallax img{
+    position: absolute;
+    pointer-events: none;
+    top:0;
+    left:0;
+    width: 100%;
+}
+
+
+.sec {
+    position: relative;
+    background-color: #003329;
+    padding: 100px;
+}
+
+.sec h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
